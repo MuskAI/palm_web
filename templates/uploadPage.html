@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>请上传图片</title>
+</head>
+<body>
+<h1 align="center">Welcome to musk manipulation detection demo page</h1>
+<h3>描述：通过部署到服务器端的深度学习tensorflow keras模型运行自主研发的深度学习算法进行在线篡改检测</h3>
+<h3>技术路线：<br>
+    1. 经过数月时间自主开发的图像篡改边缘检测算法
+    2. 前后端开发部署
+    <br>
+技术框架：
+    <br>
+Tensorflow
+    <br>
+keras
+    <br>
+Django
+    <br>
+</h3>
+<hr>
+<h1>usage tips:</h1>
+<h2>1. 点击上传button</h2>
+<h2>2. 稍等片刻</h2>
+<h2>3. 返回结果</h2>
+<br>
+    <form enctype="multipart/form-data" action="/uploadFile/" method="post">{% csrf_token %}
+       <input type="file" name="myfile"  />
+        <br/>
+       <input type="submit" value="upload"/>
+    </form>
+</body>
+</html>

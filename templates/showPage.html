@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show the result</title>
+</head>
+<body>
+<h1>show detection result</h1>
+<img src="http://127.0.0.1:8000/images/{{name}}" alt="images">
+<img src="http://127.0.0.1:8000/result/{{name}}" alt="images">
+<img src="http://127.0.0.1:8000/im_result/{{name}}" alt="images">
+<!--<img src="../upload_dir/input/0.png" alt="No image ../upload_dir/output/{{ name }}">-->
+</body>
+</html>
